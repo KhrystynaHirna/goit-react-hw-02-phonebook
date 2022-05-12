@@ -28,12 +28,12 @@ state = {
   onFilter = evt => {
     this.setState({ filter: evt.target.value });
   }
-  onDeleteContact = id => {
-      
-    this.setState({
-      contacts: this.state.contacts.filter(item => item.id !== id)
-    });
-  };
+  onDeleteContact = (id) => {
+    this.setState((prevState) => ({
+      contacts: prevState.contacts.filter(item => item.id !== id)
+    }))
+  }
+
 
   render() {
     const filter = this.state.contacts.filter(contact =>
