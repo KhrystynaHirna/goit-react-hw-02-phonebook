@@ -1,8 +1,8 @@
 import { Component } from "react";
-import s from '../app/App.module.css';
 import ContactForm from '../phonebookForm/ContactForm';
 import { ContactList } from '../contacts/ContactList';
 import { Filter } from '../filter/Filter';
+import s from '../app/App.module.css';
 import { nanoid } from "nanoid";
 
 class App extends Component {
