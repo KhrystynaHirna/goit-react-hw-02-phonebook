@@ -43,7 +43,7 @@ state = {
       <div className={s.container}>
         <h1>Phonebook</h1>
         <ContactForm onSubmit={this.onSubmit} />
-        <h2>Contacts</h2>
+        <h2 className={s.title}>Contacts</h2>
         <Filter value={this.state.filter} onFilterInput={this.onFilter} />
         <ContactList formData={filter} onDeleteBtn={this.onDeleteContact}/>
       </div>

@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
+import s from './ContactList.module.css';
  
 
 export const ContactList = ({ formData, onDeleteBtn }) => {
 
     return (
        
-            <ul>
+            <ul className={s.list}>
                 {formData.map(({ id, name, number }) => (
                     <li key={id}
                         id={id}
@@ -13,7 +14,7 @@ export const ContactList = ({ formData, onDeleteBtn }) => {
                         number={number}
                     >
                         {name}: {number}
-                        <button type='button' onClick={() => onDeleteBtn}>
+                        <button type='button' onClick={() => onDeleteBtn} className={s.button}>
                             Delete
                         </button>
                     </li>))}
