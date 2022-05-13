@@ -14,7 +14,7 @@ export const ContactList = ({ formData, onDeleteBtn }) => {
                         number={number}
                     >
                         {name}: {number}
-                        <button type='button' onClick={() => onDeleteBtn} className={s.button}>
+                        <button type='button' onClick={() => onDeleteBtn(id)} className={s.button}>
                             Delete
                         </button>
                     </li>))}
