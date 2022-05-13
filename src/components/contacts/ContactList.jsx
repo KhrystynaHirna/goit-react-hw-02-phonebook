@@ -1,3 +1,4 @@
+import { setSelectionRange } from '@testing-library/user-event/dist/utils';
 import PropTypes from 'prop-types';
 import s from './ContactList.module.css';
  
@@ -11,7 +12,8 @@ export const ContactList = ({ formData, onDeleteBtn }) => {
                     <li key={id}
                         id={id}
                         name={name}
-                        number={number}
+                        number={number} 
+                        className={s.item}
                     >
                         {name}: {number}
                         <button type='button' onClick={() => onDeleteBtn(id)} className={s.button}>

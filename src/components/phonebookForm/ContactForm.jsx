@@ -57,7 +57,7 @@ class ContactForm extends Component {
             className={s.input_first}
                  />
              </label>
-             <label htmlFor={this.inputNumberId}>
+             <label htmlFor={this.inputNumberId} className={s.label}>
                  Number
                  <input
             onChange={this.onInputChange(number)}
